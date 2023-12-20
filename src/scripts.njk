@@ -1,0 +1,30 @@
+---
+permalink: /js/scripts.js
+---
+
+{%- include './js/bulma/burger.js' -%}
+burgerFunction();
+
+{# {%- include './js/bulma/dropdown.js' -%}
+dropdownFunction(); #}
+
+{%- include './js/bulma/modal.js' -%}
+modalFunction();
+
+{%- include '../node_modules/swiper/swiper.min.js' -%}  
+
+{# {%- include './js/functions/locomotive-scroll.min.js' -%}
+(function () {
+    var scroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true
+    });
+})(); #}
+
+{%- include './js/bulma/accordion.min.js' -%}
+const bulmaCollapsibleInstances = bulmaCollapsible.attach('.is-collapsible');
+
+
+const swiper = new Swiper('.swiper', {
+    speed: 400
+});
